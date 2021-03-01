@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>入隊手続</title>		
+	<link rel="stylesheet" href="入隊.css">
+	
+</head>
+
+<body>
+	<header>
+		<h1 class="headline">
+		  <a>ポリテクセンター茨木</a>
+		</h1>
+		<ul class="nav-list">
+		  <li class="nav-list-item">
+											<a href="Untitled-1.html">入隊</a>
+		  </li>
+		  <li class="nav-list-item">玉砕</li>
+		  <li class="nav-list-item">破壊</li>
+		</ul>
+	  </header>
+
+
+	<form>
+	<p id="tt1" >氏　　　名<br>
+		<input type="text" name="shimei" size="20" maxlength="30" value="氏名">
+		<input type="text" name="gakuseki" size="20" value="受付番号を入力">
+	</p>
+	<p id="tt2">性別<br>
+		<input checked type="radio" name="seibutu" value="male">男<br>
+		<input type="radio" name="seibutu" value="female">女
+	</p>
+	<p id="tt2">希望する模擬授業科目<br>
+		
+		人体実験科<input type="checkbox" name="kamoku" value="ei">
+		マインドコントロール科<input type="checkbox" name="kamoku" value="nin">
+		拷問科<input type="checkbox" name="kamoku" value="com">
+		スマート情報技術科<input type="checkbox" name="kamoku" value="kei">
+	</p>
+	<p id="tt2">希望する学科<br>
+		<select size="1" name="gakubu" >
+		<option selected value="経営">経営学部</option>
+		<option  value="外国語">外国語学部</option>
+		<option  value="人間">人間学部</option>
+	</select>
+	</p>
+	<p id="tt2">希望すること<br>
+	<textarea name="kibou" cols="50" rows="3">大学に何か希望することがあれば書いてください。
+	</textarea>
+	</p>
+	<p id="tt2">
+		<!--input type="submit" value="送信ボタン">-->
+		<button type="submit">送信ボタン</button>
+		<!--input type="reset" value="取消ボタン">-->
+		<button type="reset">取消ボタン</button>
+	</p>
+
+
+	</form>
+
+</body>
+</html>

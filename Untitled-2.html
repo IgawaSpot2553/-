@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ポリテクセンター茨城</title>
+<link rel="stylesheet" href="example.css">
+
+</head>
+
+
+
+<body>
+	<header>
+		<h1 class="headline">
+		  <a>ポリテクセンター茨木</a>
+		</h1>
+		<ul class="nav-list">
+		  <li class="nav-list-item">
+											<a href="Untitled-1.html">入隊</a>
+		  </li>
+		  <li class="nav-list-item">玉砕</li>
+		  <li class="nav-list-item">破壊</li>
+		</ul>
+	  </header>
+	<img id="mypic"  width="1910" height="1080">
+		<script>
+		var pics_src = new Array("hl52qs000001mg07.jpg","hl52qs000001mg09.jpg","hl52qs000001mg08.jpg","Explosion.jpg");
+		var num = -1;
+
+		slideshow_timer();
+
+		function slideshow_timer(){
+			if (num == 3){
+				num = 0;
+			} 
+			else {
+				num ++;
+			}
+			document.getElementById("mypic").src=pics_src[num];
+			setTimeout("slideshow_timer()",300); 
+		}
+		</script>
+</body>
+</html>
+</html>
